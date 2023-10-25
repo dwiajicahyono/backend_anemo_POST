@@ -37,7 +37,7 @@ function writeAndSendData() {
         }
 
         // Tambahkan 100 data ke file CSV setiap menit
-        for(let i = 0; i < 100; i++) {
+        for(let i = 0; i < 300; i++) {
             const data = generateRandomData();
             fs.appendFileSync('data.csv', data + '\n');
         }
